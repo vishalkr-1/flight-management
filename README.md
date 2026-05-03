@@ -45,6 +45,12 @@ Install all required packages:
 npm install
 ```
 
+Install JSON Server globally:
+
+```bash
+npm install -g json-server
+```
+
 ### 3. Start JSON Server (Mock Backend)
 
 Make sure `db.json` exists in the root folder. Run JSON server:
