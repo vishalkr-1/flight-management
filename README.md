@@ -1,16 +1,84 @@
-# React + Vite
+# ✈️ Flight Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Flight Management web application built using **React (Vite)**, **Tailwind CSS**, **Material UI**, and **JSON Server** for mock backend APIs. The project supports flight listing, filtering, CRUD operations, and optimized rendering using virtualization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 📋 Flight listing with dynamic data
+- 🔍 Search and filtering (status, date, etc.)
+- ✏️ Add, edit, and delete flights
+- ⚡ Optimized rendering using `react-window`
+- 🎨 Responsive UI with Tailwind CSS + Material UI
+- 🔗 API integration using Axios
+- 🗄️ Mock backend using JSON Server
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19 (Vite)
+- Tailwind CSS
+- Material UI (MUI)
+- Axios
+- React Router DOM
+- React Window
+- JSON Server
+
+---
+
+## 📁 Project Setup Instructions (All Steps)
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/flight-management.git
+cd flight-management
+```
+
+### 2. Install Dependencies
+
+Install all required packages:
+
+```bash
+npm install
+```
+
+### 3. Start JSON Server (Mock Backend)
+
+Make sure `db.json` exists in the root folder. Run JSON server:
+
+```bash
+npx json-server --watch db.json --port 5000
+```
+
+👉 API will run at:
+
+```
+http://localhost:5000
+```
+
+### 4. Start Frontend (React App)
+
+```bash
+npm run dev
+```
+
+👉 App will run at:
+
+```
+http://localhost:5173
+```
+
+### 5. Build for Production (Optional)
+
+```bash
+npm run build
+```
+
+### 6. Preview Production Build
+
+```bash
+npm run preview
+```
